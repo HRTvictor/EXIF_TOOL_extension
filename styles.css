@@ -1,0 +1,144 @@
+/* @import url(...) removed to comply with stricter CSP */
+
+/* ✅ Popup Size Control: Use fixed pixels (px) for Chrome extension popups */
+html, body {
+    /* Adjust these values to change the popup's dimensions */
+    width: 400px;
+    height: 600px;
+    
+    margin: 0; 
+    background-image:url(images/redbinary.jpg);
+   /* background-color: #08985e00; */
+    
+    overflow-x: hidden; 
+}
+
+.container {
+    /* Set to 100% to fill the fixed size set on the body/html */
+    width: 100%; 
+    
+    min-height: 100%; 
+    box-sizing: border-box; /* Ensures padding doesn't push element outside of 100% width/height */
+
+    padding: 20px; 
+
+    margin: 0 auto; /* Center the container (if less than 100% width) */
+    border-radius: 15px;
+    border: 7px solid #691409b6;
+    box-shadow: 0 4px 8px rgba(0,0,0,.05);
+    background-image: url(images/redblack2.jpg);
+    background-color: #af1717;
+    
+}
+
+.title{
+    color: rgba(211, 209, 198, 0.959);
+    text-align: center;
+    /* Using web-safe fallbacks since external fonts were removed for security */
+    font-family: fantasy, sans-serif; 
+    font-weight:800;
+    font-size: 30px; 
+    font-style: normal;
+    margin-top: 0;
+}
+
+#metadataOutput {
+    background-color: #c3beb0;
+    border: 2px solid #a80803;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 6px;
+    color: black;
+    font-weight: 600;
+    max-height: 200px; 
+    overflow-y: auto;
+    white-space: pre-wrap;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.recorded-list {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.recorded-list li {
+    background-color: #c3beb0;
+    border-left: 5px solid #a51c10;
+    color: black;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    /* Using flex for horizontal layout and spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+/* Container for View/Delete buttons */
+.button-group-actions {
+    display: flex;
+    gap: 8px; /* Spacing between buttons */
+}
+
+
+/* Apply custom styling to the small list buttons */
+.recorded-list li .btn {
+    border: 1.5px solid #ef370de9;
+    border-color: #ef370de9;
+    font-family: fantasy;
+    color: rgb(24, 25, 26);
+    background-color: rgba(142, 41, 41, 0.516);
+    font-size: 14px; 
+    padding: 2px 8px; 
+    border-radius: 8px; 
+}
+
+/* Custom styling for the View button */
+.recorded-list li .btn[data-v] {
+    background-color: #b7a488; /* A light, neutral color for view */
+}
+
+/* Custom styling for the Delete button */
+.recorded-list li .btn-danger {
+    background-color: #a80803; /* A strong red background */
+    color: white; /* White text for contrast */
+}
+
+
+.btn{
+    border: 1.5px solid #ef370de9;
+    border-color: #ef370de9;
+    border-radius: 13px;
+    font-family:fantasy;
+    color: rgb(24, 25, 26);
+    background-color: rgba(142, 41, 41, 0.516);
+    font-size: 18px;
+
+}
+
+.btn1{
+    border: 1.5px solid #ef370de9;
+    border-color: #ef370de9;
+    border-radius: 13px;
+    font-family:fantasy;
+    color: rgb(23, 23, 24);
+    background-color: rgba(142, 41, 41, 0.516);
+    font-size: 15px;
+    width: fit-content;
+}
+
+#bg{
+    background-color: rgba(66, 60, 60, 0.785);
+    color: #dbd8ce;
+    
+    min-height: 10px;
+}
+
+#imageInput{
+    background-color: rgba(90, 32, 32, 0.634);
+    border-radius: 20px;
+    color: antiquewhite;
+    
+}

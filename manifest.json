@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "EXIF TOOL",
+    "version": "0.2",
+    "description": "Always Remove Your All Informations Before Uploading",
+    "action": { 
+        "default_popup": "index.html",
+        "default_icon": "images/exif_logo.png"
+    },
+    "permissions": ["storage"],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+}
